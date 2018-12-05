@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 
 class Advent_01_Test extends TestCase
 {
-    public function calculate ($input): int
+    public function testCalculate ($input): int
     {
 
 

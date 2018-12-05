@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 class Advent_01
 {
+
     public function calculate ($input): int
     {
 

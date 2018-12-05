@@ -10,6 +10,7 @@ declare(strict_types=1);
 
 interface Advent_01_Interface
 {
-public function  calculate ($input): int;
+
+    public function  calculate ($input): int;
 
 }
