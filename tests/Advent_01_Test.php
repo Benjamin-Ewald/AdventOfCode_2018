@@ -8,9 +8,15 @@
 
 declare(strict_types=1);
 
-class Advent_01_Test implements Advent_01_Interface
+use PHPUnit\Framework\TestCase;
+
+class Advent_01_Test extends TestCase
 {
+    public function calculate ($input): int
+    {
 
 
 
+
+    }
 }
