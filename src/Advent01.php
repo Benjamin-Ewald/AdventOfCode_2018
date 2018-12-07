@@ -13,7 +13,7 @@ namespace App;
 /**
  * Class Advent01
  */
-class Advent01 implements Advent_01_Interface
+class Advent01 implements Advent01Interface
 {
     /**
      * @param array $numbers

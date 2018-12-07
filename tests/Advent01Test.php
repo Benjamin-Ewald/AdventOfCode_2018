@@ -8,9 +8,11 @@
 
 declare(strict_types=1);
 
+namespace App\Tests;
+
+use App\Advent01;
 use PHPUnit\Framework\TestCase;
 
-namespace App\Tests;
 
 /**
  * Class Advent01Test
@@ -25,7 +27,7 @@ class Advent01Test extends TestCase
      *
      * @dataProvider numberProvider
      */
-    public function testCalculate ($expected, $numbers): void
+    public function testCalculate (int $expected, array $numbers): void
     {
         $this->assertEquals($expected, Advent01::calculate($numbers));
     }
@@ -33,7 +35,7 @@ class Advent01Test extends TestCase
     /**
      * @return array
      */
-    public function numberProvider()
+    public function numberProvider(): array
     {
         return [
             [3, [1, 1, 1]],
@@ -43,3 +45,4 @@ class Advent01Test extends TestCase
         ];
     }
 }
+

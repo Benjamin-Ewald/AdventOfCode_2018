@@ -11,9 +11,9 @@ declare(strict_types=1);
 namespace App;
 
 /**
- * Interface Advent_01_Interface
+ * Interface Advent01Interface
  */
-interface Advent_01_Interface
+interface Advent01Interface
 {
     /**
      * @param array $input
