@@ -19,3 +19,8 @@ echo "\n\n";
 echo 'Result is: ';
 echo Advent01::calculate($inputs);
 echo "\n\n";
+echo 'finding matching numbers';
+echo "\n\n";
+echo 'Result is: ';
+echo Advent01::findMatch($inputs);
+echo "\n\n";

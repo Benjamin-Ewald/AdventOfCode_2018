@@ -19,7 +19,9 @@ interface Advent01Interface
      * @param array $input
      * @return int
      */
-    public static function  calculate (array $input): int;
+    public static function  calculate(array $input): int;
+
+    public static function  findMatch(array $input): int;
 
 }
 
