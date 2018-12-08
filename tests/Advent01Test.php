@@ -21,18 +21,6 @@ class Advent01Test extends TestCase
 {
 
     /**
-     * @param int $expected
-     * @param array $numbers
-     * @return void
-     *
-     * @dataProvider numberProvider
-     */
-    public function testCalculate (int $expected, array $numbers): void
-    {
-        $this->assertEquals($expected, Advent01::calculate($numbers));
-    }
-
-    /**
      * @return array
      */
     public function numberProvider(): array
@@ -44,5 +32,18 @@ class Advent01Test extends TestCase
             [3, [1, -2, 3, 1]]
         ];
     }
+
+    /**
+     * @param int $expected
+     * @param array $numbers
+     * @return void
+     *
+     * @dataProvider numberProvider
+     */
+    public function testCalculate(int $expected, array $numbers): void
+    {
+        $this->assertEquals($expected, Advent01::calculate($numbers));
+    }
+
 }
 

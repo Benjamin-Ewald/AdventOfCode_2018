@@ -10,22 +10,25 @@ declare(strict_types=1);
 
 namespace App;
 
+
 /**
  * Class Advent01
  */
 class Advent01 implements Advent01Interface
 {
+
     /**
      * @param array $numbers
      * @return int
      */
-    public static function calculate (array $numbers): int
+    public static function calculate(array $numbers): int
     {
         $result = 0;
         foreach ($numbers as $number) {
-            $result += $number;
+            $result += (int) $number;
         }
         return $result;
     }
+
 }
 
