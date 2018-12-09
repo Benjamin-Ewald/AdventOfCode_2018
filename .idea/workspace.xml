@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f16c297b-e376-4dbc-b2ea-8c916bc916a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/Advent03Bin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Advent03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Advent03.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Advent03Interface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Advent03Test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Advent01Bin.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Advent01Bin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Advent01.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Advent01.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Advent01Interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Advent01Interface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Advent01Test.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Advent01Test.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,22 +53,23 @@
     <session id="1466299975">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
-          <entry key="php" value="1357" />
+          <entry key="php" value="1953" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="1357" />
+          <entry key="PHP" value="1953" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -74,13 +77,15 @@
         <counts>
           <entry key="Advent01" value="2" />
           <entry key="Advent0101" value="1" />
-          <entry key="php" value="7" />
+          <entry key="Advent03" value="2" />
+          <entry key="php" value="13" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="7" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PHP" value="13" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -91,40 +96,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Advent01.php">
+        <entry file="file://$PROJECT_DIR$/src/Advent03.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+            <state relative-caret-position="550">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/Advent01Bin.php">
+        <entry file="file://$PROJECT_DIR$/data/Advent03">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="31020">
+              <caret line="1410" column="22" selection-start-line="1410" selection-start-column="22" selection-end-line="1410" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Advent01Interface.php">
+        <entry file="file://$PROJECT_DIR$/bin/Advent03Bin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="330">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Advent01Test.php">
+        <entry file="file://$PROJECT_DIR$/src/Advent03Interface.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-              <folding>
-                <element signature="e#143#160#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="242">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -141,10 +143,15 @@
         <option value="$PROJECT_DIR$/src/Advent_01.php" />
         <option value="$PROJECT_DIR$/src/Advent_01_Interface.php" />
         <option value="$PROJECT_DIR$/data/Advent0101" />
-        <option value="$PROJECT_DIR$/src/Advent01Interface.php" />
-        <option value="$PROJECT_DIR$/bin/Advent01Bin.php" />
         <option value="$PROJECT_DIR$/tests/Advent01Test.php" />
         <option value="$PROJECT_DIR$/src/Advent01.php" />
+        <option value="$PROJECT_DIR$/bin/Advent01Bin.php" />
+        <option value="$PROJECT_DIR$/data/Advent03" />
+        <option value="$PROJECT_DIR$/tests/Advent03Test.php" />
+        <option value="$PROJECT_DIR$/src/Advent01Interface.php" />
+        <option value="$PROJECT_DIR$/src/Advent03Interface.php" />
+        <option value="$PROJECT_DIR$/bin/Advent03Bin.php" />
+        <option value="$PROJECT_DIR$/src/Advent03.php" />
       </list>
     </option>
   </component>
@@ -186,7 +193,7 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="6" />
     <option name="width" value="1920" />
     <option name="height" value="1047" />
@@ -197,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +240,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,6 +252,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Dev\AdventOfCode_2018\data" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -260,7 +268,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.Advent01Bin.php">
+  <component name="RunManager" selected="PHP Script.Advent03Bin.php">
+    <configuration name="Advent03Bin.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/AdventOfCode_2018/bin/Advent03Bin.php">
+      <method v="2" />
+    </configuration>
     <configuration name="src" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/src" />
       <method v="2" />
@@ -273,13 +284,20 @@
       <option name="workingDirectory" value="C:\Dev\AdventOfCode_2018" />
       <method v="2" />
     </configuration>
+    <configuration name="Advent03Bin.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/bin/Advent03Bin.php">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="PHP Script.Advent01.php" />
       <item itemvalue="PHPUnit.src" />
       <item itemvalue="PHP Script.Advent01Bin.php" />
+      <item itemvalue="JavaScript Debug.Advent03Bin.php" />
+      <item itemvalue="PHP Script.Advent03Bin.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.Advent03Bin.php" />
+        <item itemvalue="JavaScript Debug.Advent03Bin.php" />
         <item itemvalue="PHP Script.Advent01Bin.php" />
         <item itemvalue="PHP Script.Advent01.php" />
         <item itemvalue="PHPUnit.src" />
@@ -300,7 +318,8 @@
       <workItem from="1544174200092" duration="5426000" />
       <workItem from="1544204815182" duration="3494000" />
       <workItem from="1544291502048" duration="2846000" />
-      <workItem from="1544294392066" duration="8167000" />
+      <workItem from="1544294392066" duration="8443000" />
+      <workItem from="1544386856792" duration="4434000" />
     </task>
     <servers />
   </component>
@@ -310,7 +329,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28180000" />
+    <option name="totallyTimeSpent" value="32890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -322,12 +341,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="0" width="1920" height="1047" extended-state="0" />
+    <frame x="6" y="0" width="1920" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49562684" visible="true" weight="0.26344085" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49562684" visible="true" weight="0.26612905" />
       <window_info id="Structure" order="1" sideWeight="0.5043732" side_tool="true" weight="0.2580645" />
       <window_info id="Favorites" order="2" sideWeight="0.5043732" side_tool="true" weight="0.2580645" />
+      <window_info anchor="bottom" id="PHP-CGI Server" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4983871" visible="true" weight="0.24863088" />
@@ -391,13 +411,6 @@
     <entry file="file://$USER_HOME$/PhpstormProjects/AdventOfCode/Advent_01/src/AdventInterface.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Advent01Interface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Advent01">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -405,10 +418,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/Advent03.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advent01.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="11" lean-forward="true" selection-start-line="8" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Advent03Test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#143#160#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advent01Interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Advent01Test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+        <state relative-caret-position="132">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#143#160#0#PHP" expanded="true" />
           </folding>
@@ -417,15 +457,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/Advent01Bin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        <state relative-caret-position="440">
+          <caret line="25" column="12" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Advent01.php">
+    <entry file="file://$PROJECT_DIR$/src/Advent03Interface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        <state relative-caret-position="242">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/Advent03Bin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Advent03">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31020">
+          <caret line="1410" column="22" selection-start-line="1410" selection-start-column="22" selection-end-line="1410" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Advent03.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
     </entry>
