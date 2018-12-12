@@ -22,10 +22,14 @@ class Advent03 implements Advent03Interface
         $fabric = array('coord' => [0, 0]);
         $solution = 0;
 
+        $idArray = array ();
+        $inchOverlap = false;
+        $claimCandidate = 0;
+
         foreach ($claimList as $claim)
         {
             $claimExplosion = explode(' ', $claim);
-            $id = (int)trim($claimExplosion[0], '#');
+            $id = $claimExplosion[0];
             $coords = explode(',', trim($claimExplosion[2],':'));
             $fabricX = $coords[0] + 1;
             $fabricY = $coords[1] + 1;
@@ -45,6 +49,8 @@ class Advent03 implements Advent03Interface
                         $fabric[$claimedInch] = [0, $id];
                     }
                     $fabricY++;
+
+                    $idArray[$id][] = [$claimedInch => $fabric[$claimedInch][0]];
                 }
                 $fabricX++;
                 $fabricY = $coords[1] + 1;
@@ -56,6 +62,26 @@ class Advent03 implements Advent03Interface
                 $solution++;
             }
         }
+
+        foreach ($idArray as $id => $claim) {
+
+            foreach ($claim as $claimedInch => $count) {
+                $inchOverlap = false;
+                foreach ($count as $claimedInch2 => $count2) {
+                  if ($count2 > 0) {
+                      $inchOverlap = true;
+                      var_dump($count2);
+                  }
+                }
+                if ($inchOverlap === false) {
+                    $claimCandidate = $claim;
+                }
+            }
+
+        }
+
+        var_dump($claimCandidate);
+        //var_dump($idArray);
         return $solution;
     }
 }
