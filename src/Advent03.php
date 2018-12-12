@@ -19,13 +19,13 @@ class Advent03 implements Advent03Interface
      */
     public static function giveOverlappingInches(array $claimList) : int
     {
-        $fabric = array('coord' => 0);
+        $fabric = array('coord' => [0, 0]);
         $solution = 0;
 
         foreach ($claimList as $claim)
         {
             $claimExplosion = explode(' ', $claim);
-            //$id = $claimExplosion[0];
+            $id = (int)trim($claimExplosion[0], '#');
             $coords = explode(',', trim($claimExplosion[2],':'));
             $fabricX = $coords[0] + 1;
             $fabricY = $coords[1] + 1;
@@ -39,10 +39,10 @@ class Advent03 implements Advent03Interface
                 {
                     $claimedInch = $fabricX . 'x' . $fabricY;
                     if (array_key_exists($claimedInch,$fabric)) {
-                        $fabric[$claimedInch]++;
+                        $fabric[$claimedInch][0]++;
                     }
                     else {
-                        $fabric[$claimedInch] = 0;
+                        $fabric[$claimedInch] = [0, $id];
                     }
                     $fabricY++;
                 }
@@ -50,7 +50,7 @@ class Advent03 implements Advent03Interface
                 $fabricY = $coords[1] + 1;
             }
         }
-        foreach ($fabric as $inch => $count)
+        foreach ($fabric as $inch => [$count, $id])
         {
             if ($count > 0){
                 $solution++;
