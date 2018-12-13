@@ -25,11 +25,9 @@ class Advent03Test extends TestCase
      */
     public function numberProvider(): array
     {
-        return [
-            [['#1 @ 1,3: 4x4'], //something is wrong here. Unit test only takes first line.
-            ['#2 @ 3,1: 4x4'],
-            ['#3 @ 5,5: 2x2']]
-        ];
+        return [[
+        'expect 4'  => ['#1 @ 1,3: 4x4', '#2 @ 3,1: 4x4', '#3 @ 5,5: 2x2']
+        ]];
     }
 
     /**
@@ -40,7 +38,7 @@ class Advent03Test extends TestCase
      */
     public function testGiveOverlappingInches(array $numbers): void
     {
-        $this->assertEquals(4, Advent03::giveOverlappingInches($numbers));
+        $this->assertEquals('#3', Advent03::giveOverlappingInches($numbers));
     }
 
 }

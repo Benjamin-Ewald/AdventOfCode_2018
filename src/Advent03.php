@@ -19,11 +19,12 @@ class Advent03 implements Advent03Interface
      */
     public static function giveOverlappingInches(array $claimList) : int
     {
-        $fabric = array('coord' => [0, 0]);
+        ini_set('memory_limit', '512M');
+        $fabric = array();
         $solution = 0;
 
         $idArray = array ();
-        $inchOverlap = false;
+        $inchOverlap = true;
         $claimCandidate = 0;
 
         foreach ($claimList as $claim)
@@ -43,20 +44,20 @@ class Advent03 implements Advent03Interface
                 {
                     $claimedInch = $fabricX . 'x' . $fabricY;
                     if (array_key_exists($claimedInch,$fabric)) {
-                        $fabric[$claimedInch][0]++;
+                        $fabric[$claimedInch]++;
                     }
                     else {
-                        $fabric[$claimedInch] = [0, $id];
+                        $fabric[$claimedInch] = 0;
                     }
                     $fabricY++;
 
-                    $idArray[$id][] = [$claimedInch => $fabric[$claimedInch][0]];
+                    $idArray[$id][$claimedInch] = $fabric[$claimedInch]; // array needs to get filled after the loop
                 }
                 $fabricX++;
                 $fabricY = $coords[1] + 1;
             }
         }
-        foreach ($fabric as $inch => [$count, $id])
+        foreach ($fabric as $inch => $count)
         {
             if ($count > 0){
                 $solution++;
@@ -64,24 +65,18 @@ class Advent03 implements Advent03Interface
         }
 
         foreach ($idArray as $id => $claim) {
-
+            $inchOverlap = false;
+            //var_dump($id, $claim);
             foreach ($claim as $claimedInch => $count) {
-                $inchOverlap = false;
-                foreach ($count as $claimedInch2 => $count2) {
-                  if ($count2 > 0) {
+                  if ($count > 0) {
                       $inchOverlap = true;
-                      var_dump($count2);
                   }
-                }
-                if ($inchOverlap === false) {
-                    $claimCandidate = $claim;
-                }
             }
-
+                if ($inchOverlap === false) {
+                    $claimCandidate = $id;
+                }
         }
-
-        var_dump($claimCandidate);
-        //var_dump($idArray);
+        
         return $solution;
     }
 }
