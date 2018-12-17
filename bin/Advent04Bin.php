@@ -23,5 +23,5 @@ echo 'Result is: ';
 //echo \App\Advent03::giveOverlappingInches($inputs);
 $sortedGuardTimes = \App\Advent04::sortGuardTimes($inputs);
 $timeTable = \App\Advent04::buildTimeTable($sortedGuardTimes);
-//var_dump($timeTable);
+var_dump($sortedGuardTimes);
 echo "\n\n";
