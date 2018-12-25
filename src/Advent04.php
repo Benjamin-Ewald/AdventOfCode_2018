@@ -24,11 +24,14 @@ class Advent04 implements Advent04Interface
         // Day => [ ID [ Minute => asleep]]
         $timeTable = array();
         $previousTimestamp = '[23:57]';
+        $previousDate = '1500-00-00';
         $activeGuard = '#0000';
 
         $startedEarly = false;
         $wasAsleep = false;
         $wokeUp = false;
+        $isAwake = false;
+        $isAsleep = false;
 
 
         foreach ($guardList as $input)
@@ -39,23 +42,51 @@ class Advent04 implements Advent04Interface
             $date = $dateTimeExplosion[0];
             $time = $dateTimeExplosion[1];
             $action = trim($inputExplosion[1]);
-            //var_dump($inputExplosion, $date, $time, $action);
+
 
             //if guard begins shift
-            //if timestamp 23:xx count difference to 00:00 && save in startedEarly
-            //note guardID && save time
+            if ( preg_match('[#+]', $action)) {
+                //if timestamp 23:xx count difference to 00:00 && save in startedEarly
+                if (preg_match('[23:+]', $time)) {
+                    $startedEarly = true;
+                    //$time = '00:00';
+                }
+                $activeGuard = explode(' ', $action)[1];
+                $isAwake = true;
+            }
 
-            //previousTimestamp to time as minutes && if startedEarly subtract diff
-
-            //foreach minute save asleep/awake state to timeTable based on previous action
-            
+            $timeTable[$date][$activeGuard][$time] =  $action;
 
             $previousTimestamp = $time;
+            $previousDate = $date;
 
         }
 
-        return $guardList;
+        return $timeTable;
+    }
+
+    public static function calculateTimeTable(array $timeTable) : array
+    {
+
+        $isAwake = false;
+        $isAsleep = false;
+
+        foreach ($timeTable as $day => $id) {
+            //var_dump($day,$id);
+            foreach ($id as $id2 => $time) {
+
+                foreach ($time as $minutes => $action) {
+                    var_dump($minutes, $action);
+                }
+
+            }
+
+        }
+
+
+        return $timeTable;
 
     }
+
 }
 

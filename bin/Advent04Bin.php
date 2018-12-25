@@ -16,6 +16,7 @@ $inputs = file(dirname(__DIR__) . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPAR
 
 $sortedGuardTimes = array();
 $timeTable = array();
+$calculatedTimeTable = array();
 
 echo 'Calculating amount of overlapping fabric inches';
 echo "\n\n";
@@ -23,5 +24,6 @@ echo 'Result is: ';
 //echo \App\Advent03::giveOverlappingInches($inputs);
 $sortedGuardTimes = \App\Advent04::sortGuardTimes($inputs);
 $timeTable = \App\Advent04::buildTimeTable($sortedGuardTimes);
-var_dump($sortedGuardTimes);
+$calculatedTimeTable = \App\Advent04::calculateTimeTable($timeTable);
+//var_dump($calculatedTimeTable);
 echo "\n\n";
